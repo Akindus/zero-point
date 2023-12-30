@@ -1,0 +1,27 @@
+*{
+    color: black;
+}
+h1{
+    color: blue;
+}
+P{
+    color: rgb(83, 3, 3)!important; 
+}
+body{
+    background-color: rgb(255, 199, 255);
+}
+P#intro{
+    color: blue;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    padding: 5px 30px 5px 30px;
+    border: 2px solid rgb(194, 7, 211);
+    border-width: 15px;
+    border-radius: 30px;
+}
+P{
+    font-family: cursive;
+    color: inherit;
+}
