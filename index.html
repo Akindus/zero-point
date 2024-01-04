@@ -4,84 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="mystyle.css">
-    
 </head>
 <body>
     <!-- HEADER SECTION START -->
     <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand"
-                    <a href="#hero">
-                        <h1><span>Z<span>ero<span> P<span>oint</span></h1>
+    <!-- Nav Bar First -->
+        <Nav class="navbar-one flex">
+            <div class="left flex">
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>akindus786@gmail.com</span>
+                </div>
+                <div class="call">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>+92 333 919 7070</span>
+                </div>
             </div>
-            <div class="nav-list">
-                <div class="hamburger">
-                    <div class="bar"></div>
+
+            <div class="right flex">
+                <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
             </div>
-            <ul>
-                <li><a href="#hero" data-after="Home">Home</a></li>
-                <li><a href="#services" data-after="Services">Services</a></li>
-                <li><a href="#projects" data-after="Projects">Projects</a></li>
-                <li><a href="#about" data-after="About">About</a></li>
-                <li><a href="#contact" data-after="Contact">Contact</a></li>
+        </Nav>
+    <!-- Nav Bar Second -->
+        <div class="nav-bar">
+            <div class="nav-logo">
+            <div class="logo border"></div>
+        </div>
+
+            <div class="nav-address border">
+                <p class="add-a">Zero Point</p>
+            </div>
+            <div class="nav-address border">
+            <div class="nav-address">
+                <p class="add-b">Islamabad</p>
+            </div>
+            
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-c">Pakistan</p>
+            </div>
+            </div>
+            
+        <div class="nav-search">
+            <select class="search-s">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Zero Point" class="search-i">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </Div>
+        </div>
+
+        <div class="nav-list">
+            <div class="hamburger">
+                <div class="bar">
+        </div>
+
+            <div<ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
+            </div>    
     </section>
     <!-- HEADER SECTION END -->
 
-    <!-- HERO SECTION START -->
-    <section id="hero">
-        <div class="header container">
-            <h1>Hello!,<span></span></h1>
-            <h1>My First HTML<span></span></h1>
-            <h1>Akindus Developers<span></span></h1>
-            <button>Portfolio</button>
+    <section class="hero">
+        <div class="contents">
+            <div class="head-title">
+                <h2>I'm working on</h2>
+                <h3>Web Designing</h3>
+                <p>Establishing significant relationships and making a 
+                    lasting impression by creating meaningful connections 
+                    in 'Ventures'</p>
+        </div>
+        <div<a href="#" class="btn">My Works</a>
+        </div>
+
     </section>
     <!-- HERO SECTION END -->
 
     <!-- SERVICE SECTION START -->
-    <section id="services">
-        <div class="services container">
-            <div class="services-top">
-                <h1 class="section-title"><span>Ser<span>vi<span>ces</span></h1>
-                <p id="intro">Elevate your online presence with our outstanding web development services. 
-                    We specialize in creating responsive and visually stunning websites tailored to your business needs. 
-                    Let's bring your vision to life!</p>
-            </div>
-            <div class="services-bottom">
-    <!-- Service Item No.1 -->
-                <div class="service-item">
-                    <div class="icon"><img width="100" height="100" src="https://img.icons8.com/color/100/services--v1.png" alt="services--v1"/></div>
-                    <h1>Web design</h1>
+
+<section id="service">
+    <div class="container-serv">
+        <div class="service-wrapper">
+        <div class="service">
+            <h1>Our Services<span></span></h1>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
                     <p>Transform your online presence with our expert web design services. 
-                        We craft visually captivating websites that seamlessly blend aesthetics with functionality. 
-                        Captivates your audience and drives business growth.</p>
-                </div>
-    <!-- Service Item No.2 -->
-    <div class="service-item">
-        <div class="icon"><img width="48" height="48" src="https://img.icons8.com/color/48/design--v1.png" alt="design--v1"/></div>
-        <h1>Logo design</h1>
-        <p>Ignite your brand identity with our professional logo design services. Our creative experts specialize in crafting unique, 
-            memorable logos that resonate with your brand essence. Let us shape the face of your brand.</p>
+                            We craft visually captivating websites that seamlessly blend aesthetics with functionality. 
+                            Captivates your audience and drives business growth.</p></div>
+                    
+                    <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Enhance your online presence with our professional web development services. 
+                        Our skilled team creates responsive and visually appealing websites customized to your business needs. 
+                        We deliver a compelling online experience. Let us transform your vision into a powerful and 
+                        engaging digital reality.</p></div>
+                  
+    
+                    <div class="card">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Mobile Development</h2>
+                    <p>Enhance your online presence with our professional web development services. 
+                        Our skilled team creates responsive and visually appealing websites customized to your business needs. 
+                        We deliver a compelling online experience. Let us transform your vision into a powerful and 
+                        engaging digital reality.</p></div>
+                   
+    
+                    <div class="card">
+                    <i class="fa-solid fa-business-time"></i>
+                    <h2>Ecommerce</h2>
+                    <p>Enhance your online presence with our professional web development services. 
+                        Our skilled team creates responsive and visually appealing websites customized to your business needs. 
+                        We deliver a compelling online experience. Let us transform your vision into a powerful and 
+                        engaging digital reality.</p></div>
+                  
+    
+                    <div class="card">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h2>Research & Marketing</h2>
+                    <p>Enhance your online presence with our professional web development services. 
+                        Our skilled team creates responsive and visually appealing websites customized to your business needs. 
+                        We deliver a compelling online experience. Let us transform your vision into a powerful and 
+                        engaging digital reality.</p></div>
+                  
+    
+                    <div class="card">
+                    <i class="fa-brands fa-screenpal"></i>
+                    <h2>Graphic & Logo Design</h2>
+                    <p>Enhance your online presence with our professional web development services. 
+                        Our skilled team creates responsive and visually appealing websites customized to your business needs. 
+                        We deliver a compelling online experience. Let us transform your vision into a powerful and 
+                        engaging digital reality.</p></div>
             </div>
-    <!-- Service Item No.3 -->
-    <div class="service-item">
-        <div class="icon"><img width="48" height="48" src="https://img.icons8.com/color/48/cms.png" alt="cms"/></div>
-        <h1>Content Management</h1>
-        <p>Effortlessly manage your digital content with our robust Content Management services. 
-            We empower you to update, organize, and publish content seamlessly. 
-            From user-friendly interfaces to streamlined workflows, remains dynamic and engaging. 
-            Experience hassle-free content control tailored to your unique needs.</p>
-            </div>
-    <!-- Service Item No.4 -->
-    <div class="service-item">
-        <div class="icon"><img width="100" height="100" src="https://img.icons8.com/nolan/100/e-commerce.png" alt="e-commerce"/></div>
-        <h1>E-Commerce Development</h1>
-        <p>Revolutionize your business with our E-commerce Development services. 
-            We craft powerful online stores that captivate customers and drive sales. 
-            Transform your digital storefront and elevate your brand in the competitive online marketplace with our expert services.</p>
-    </div>  
+             
+</section>
+
+
     <!-- SERVICE SECTION END -->
 
     <!-- PROJECTS SECTION START -->
@@ -99,10 +175,10 @@
                     <P>"Embark on a digital journey of excellence with our unparalleled Web Design and Development services. 
                         From concept inception to online manifestation, our expert team tailors solutions that authentically reflect 
                         your unique brand identity. Elevate your online presence with our cutting-edge design and development expertise."</P>
+            </div>
+                <div class="project-img">
+                    <img width="500" height="300" src="./assets/images/Image 2.png" alt="Image of this project"> Writing in Laptop
                 </div>
-                    <div class="project-img">
-                        <img width="100" height="100" src="./assets/images/Image 2.png" alt="Image of this project">
-                    </div>
     <!-- Project No.2 -->
             <div class="project-item">
                 <div class="project-info">
@@ -157,6 +233,7 @@
                     Our experts ensure your website's front-end not only captivates but also delivers a smooth and 
                     intuitive user journey. Transform vision into captivating reality.</p>
                     <a href="#" class="cta">Download Resume</a>
+        </div>
     </section>
     <!-- ABOUT SECTION END -->
 
@@ -172,7 +249,7 @@
                     <h1>Phone</h1>
                     <h2>+92 333 919 7070</h2>
                     <h2>+92 326 737 7793</h2>
-                </div>
+            </div>
                 <div class="contact-item">
                     <div class="icon"><img src="./assets/icons/icons8-email-100.png" alt="Phone">
                     <div class="contact-info">
@@ -183,7 +260,7 @@
                     <div class="icon"><img src="./assets/icons/icons8-address-100.png" alt="Phone">
                     <div class="contact-info">
                         <h1>Address</h1>
-                        <h2>1413, Street # 85, Sector D-12/1, Islamabad-Pakistan</h2>>
+                        <h2>1413, Street # 85, Sector D-12/1, Islamabad-Pakistan</h2>
             </div>
     </section>
     <!-- CONTACT SECTION END -->
@@ -201,8 +278,15 @@
                         <a href="#"><img src="./assets/icons/icons8-twitter-100.png"></a>
                         <a href="#"><img src="./assets/icons/icons8-linkedin-100.png"></a>
                     </div>
-                </div>
-                <p>Copyright &copy; 2023 Akindus. All rights reserved</p>
+        <table>
+            <tr>
+                <td><img height="45" width="30px" src="./assets/icons/icons8-youtube-100.png"></td>
+                <td class="des">Lorem 100 evkjgrkdsffvb kjsbvf sjkvdbksj dhn dhjhj jhj hj jj</td> 
+                <td>$ 500</td>
+            </tr>
+        </table>
+        <div>
+            <p>Copyright &copy; 2024 Akindus. All rights reserved</p>
         </div>
     </section>
     <!-- FOOTER SECTION END -->
