@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html.body{
+    height: 100%
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -69,32 +72,11 @@ span{
 }
 .nav-address .add-a{
     color: rgb(209, 138, 6);
-    font-size: 30px;
-    font-weight:bold;
-    margin: auto;
-    background: none;
+    font-size: 25px;
+    font-weight:600;
 }
-
-.add-b{
-    color: white;
-    font-size: 0.60rem;
-    padding: 0px;
-    margin-left: 10px;
-    margin-top: 25px;
-    background: none;
-}
-.add-icon{
-    display:inline-flex;
-    align-items:flex-start;
-    margin-left: 0px;
-}
-.add-c{
-    color: rgb(16, 240, 8);
-    font-size: 0.80rem;
-    margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    background: none;
+.nav-address:hover{
+    border: 1px solid white;
 }
 
 .nav-search{
@@ -707,6 +689,33 @@ form btn2:hover{
 
 
 /* CSS FOR SMALL SCREEN */
+
+@media screen and (max-width:550px){
+    .nav{
+        padding: 5vw 5vw;
+        height: 20px;
+    }
+    .nav-address .add-a{
+        font-size: 4vw;
+        height: 10px;
+    }
+    .nav-address .add-b{
+        padding:2px 2px;
+        height: 0.1vw;
+    }
+    .nav-list{
+        font-size: 2vw;
+        flex-direction: column;
+    }
+    .search-s{
+        font-size: 1vw;
+    }
+    
+    p .add-a{
+        font-size: 0.1vw;
+    }
+    
+}
 
 /* @media only screen and (max-width: 600px){
     
