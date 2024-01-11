@@ -1,215 +1,231 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-html.body{
-    height: 100%
-}
 *{
     margin: 0px;
     padding: 0px;
     font-family:"poppins", sans-serif;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
 
-/* Nav Bar First */
+/* Nav Bar */
 nav{
-    padding: 0.5px 15px;
-    width: 100%;
-    font-size: small;
-}
-
-.flex{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-
-.navbar-one{
-    background-color: rgb(6, 153, 129);
-    color: white;
-    cursor: pointer;
-}
-
-.left > div + div,
-.right > div{
-    margin-left: 15px;
-}
-
-.left > div:hover,
-.right > div:hover{
-    color: black;
-    transition: all 0.5s;
-}
-
-span{
-    margin-left: 2px;
-}
-
-/* Nav Bar Second */
-.nav-bar{
-    height: 40px;
-    width: 100%;
-    background-color: rgb(4, 108, 116);
-    color: rgb(235, 17, 17);
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items:center;
     justify-content: space-between;
-    cursor: pointer;
-    position: fixed;
-}
+    padding: 10px;
+    background: #528b94;
+}  
 
-.logo{
-    background-image: url(./assets/images/Logo-removebg-preview.png);
-    background-size: cover;
-    height: 40px;
-    width: 50px;
-    margin: 15px;
-}
-.border:hover{
-    border: 1px solid white;
-}
-.nav-address .add-a{
-    color: rgb(209, 138, 6);
-    font-size: 25px;
-    font-weight:600;
-}
-.nav-address:hover{
-    border: 1px solid white;
-}
+/* Nav-Bar Logo Settings */
 
-.nav-search{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(113, 226, 230);
-    width: 300px;
-    height: 28px;
-    border-radius: 4px;
-}
-
-.nav-search:hover{
-    border: 3px solid rgb(221, 147, 8);
-}
-
-.search-s{
-   background-color: lightgray;
-   width: 43px;
-   text-align: center;
-   border-top-left-radius: 4px;
-   border-bottom-left-radius: 4px;
-   border: none;
-   
-}
-.search-i{
-    width: 100%;
-    font-size: 0.85rem;
-    border: none;
-}
-
-.search-icon{
-    width: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    background-color: rgb(226, 169, 64);
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    color: rgb(31, 30, 30);
-}
-
-.nav-list li{
-    float: left;
-    color: white;
-    list-style: none;
-    font: size 300px;;
-}
-
-.nav-list li:hover{
-    border: 1.5px solid white;
- }
-
-.nav-list li a{
+nav a{
     text-decoration: none;
+    color: #c4893b;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav img{
+    width: 40px;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+img:hover{
+    border: 1px solid whitesmoke;
+    width: 30%;
+    border-radius: 5px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+#toggler, label{
+    display: none;
+}
+
+/* Nav-Bar Search Bar Settings */
+
+nav .search-box{
+    display: flex;
+    margin: center;
+    height: 30px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    width: 320px;
+}
+.search-box input:hover{
+    background-color: #033055;
     color: white;
-    padding: 15px;
+}
+.search-box span{
+    color:whitesmoke;
+    background-color: #c4893b;
+    font-size: 20px;
+    height: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;    
+}
+.search-box span:hover{
+    color: whitesmoke;
+}
+.search-box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #033055;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.search-box span:hover::after{
+    width: 100%;
+}
+
+/* Nav LIST Settings */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: auto 10px;
+}
+nav ul li{
+    padding: 0px 5px;
+    margin: 0px 0px;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 350px;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    padding: 5px 5px;
+}
+nav ul li:hover a{
+    background-color:#c4893b;
+    color: black;
+    font-weight:bold;
+    border-radius: 8px;
+}
+@media screen and (max-width: 650px){
+    .menu{
+        width: 100px;
+        max-height: 0px;   
+        overflow: hidden;
+    }
+    label{
+        display: inline-flex;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+    .list{
+        flex-direction: column;
+        text-align:start;
+        padding: 5px;
+    }
 }
 
 /* HERO SECTION */
-.hero{
+
+.hero-section{
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    text-align: left;
     background-image: url(./assets/images/Web\ Developers.jpg);
     background-size: cover;
-    background-position: top;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:self-start;
+    background-repeat: no-repeat;
 }
 
-.hero .contents{
-    width: 60%;
-    padding-left: 125px;
-    margin-top: 0px;
+.hero-contents{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px auto;
+    margin-left: 120px;
 }
-
-.head-title h2{
-    color: rgb(14, 13, 13);
+.hero-contents-inner h2{
+    color: black;
     font-size: 25px;
     opacity: 0.7;
-    margin-top: 0px;
+    margin-bottom: 0px;
 }
-
-.head-title h3{
-    color:black;
-    font-size: 40px;
-    margin-top: -10px;
-}
-.head-title h3:hover{
-    color:#9b5f06;
-}
-
-
-.head-title p{
-    font-size: 20px;
-    font-weight: 550;
-    margin-top: auto;
-    text-align:left;
-    color: rgb(14, 13, 13);
-    background: none;
-}
-
-.contents .btn{
-    text-decoration: none;
-    display:inline-block;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
+.hero-contents-inner h3{
     color: black;
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 6px;
-    padding: 8px 10px;
-    margin-top: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
-    width: 120px;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 
-.contents .btn:hover{
+.hero-contents-inner p{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-right: 660px;
+}
+.hero-contents-inner button{
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #c4893b;
+    margin-top: 60px;
+}
+.hero-contents-inner button:hover{
     color:#885305;
+    font-weight: bold;
     background-color: wheat;
     border: 3px solid #885305;
+    box-shadow: 0 0 30px #885305;
 }
+@media (max-width: 600px){
+    .hero-contents{
+        width: 70%;
+        padding: 0 0px;
+    }
+    .hero-contents-inner h2{
+        font-size: 20px;
+    }
+    .hero-contents-inner h3{
+        font-size: 23px;
+        justify-content: flex-start;
+    }
+    .hero-contents-inner p{
+        width: 100%;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+/* HERO SECTION END */
 
 /* SERVICE SECTION */
 
 .container-serv{
     min-height: 50vh;
     width: 100%;
-    background-color: rgb(77, 137, 141);
+    background-color: #B4C7CD;
 }
 
 .service-wrapper{
@@ -260,7 +276,7 @@ h1::after{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
-   margin-top: 30px;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
 .card{
@@ -690,31 +706,10 @@ form btn2:hover{
 
 /* CSS FOR SMALL SCREEN */
 
-@media screen and (max-width:550px){
-    .nav{
-        padding: 5vw 5vw;
-        height: 20px;
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #ff004f;
     }
-    .nav-address .add-a{
-        font-size: 4vw;
-        height: 10px;
-    }
-    .nav-address .add-b{
-        padding:2px 2px;
-        height: 0.1vw;
-    }
-    .nav-list{
-        font-size: 2vw;
-        flex-direction: column;
-    }
-    .search-s{
-        font-size: 1vw;
-    }
-    
-    p .add-a{
-        font-size: 0.1vw;
-    }
-    
 }
 
 
