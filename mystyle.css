@@ -119,7 +119,7 @@ nav ul li:hover a{
     font-weight:bold;
     border-radius: 8px;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 480px){
     .menu{
         width: 100px;
         max-height: 0px;   
@@ -199,7 +199,7 @@ nav ul li:hover a{
     border: 3px solid #885305;
     box-shadow: 0 0 30px #885305;
 }
-@media (max-width: 600px){
+@media (max-width: 480px){
     .hero-contents{
         width: 70%;
         padding: 0 0px;
