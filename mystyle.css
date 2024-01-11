@@ -205,16 +205,21 @@ nav ul li:hover a{
         padding: 0 0px;
     }
     .hero-contents-inner h2{
+        margin: 0px 0px 0px -50px;
+        width: 70%;
         font-size: 20px;
     }
     .hero-contents-inner h3{
+        margin: 0px 0px 0px -50px;
+        width: 70%;
         font-size: 23px;
         justify-content: flex-start;
     }
     .hero-contents-inner p{
+        margin: 0px 0px 0px -50px;
         width: 100%;
         font-size: 15px;
-        line-height: 22px;
+        line-height: 20px;
     }
 }
 
