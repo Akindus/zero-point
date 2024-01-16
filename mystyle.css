@@ -78,7 +78,7 @@ html{
     position: relative;
     justify-content: left;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin-top: 0px auto;
     margin-left: 130px;
     margin-bottom: 0px;
@@ -149,7 +149,7 @@ html{
     background-color: #b4c7cd;
     background-repeat: cover;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
 .service-section{
     padding: 10px 10px;
@@ -171,14 +171,14 @@ html{
     background-color: white;
     text-align: center;
 }
-/* .service-section h1:hover{
+.service-section h1:hover{
     font-weight:bolder;
     width: 10%;
     color: #885305;
     background-color: wheat;
     border: 3px solid #885305;
     box-shadow: 0 0 30px #885305;
-} */
+}
 .service-contents{
     display:grid;
     grid-template-columns: repeat(6, 1fr);
@@ -459,8 +459,8 @@ html{
 }
 .project-section{
     padding: 10px 10px;
-    margin-top: 0px;
-    height: 100vh;
+    margin-top: -330px;
+    height: 0vh;
     width: 100%;
 }
 .project-section h1{
@@ -551,7 +551,7 @@ html{
     color: black;
     font-size: 20px;
     font-weight: bold;
-    margin-top: -10px;
+    margin-top: -15px;
     margin-left: 20px;
     margin-bottom: 20px;
     width: 115px;
@@ -719,7 +719,7 @@ html{
     color: black;
     font-size: 20px;
     font-weight: bold;
-    margin-top: -5px;
+    margin-top: -30px;
     margin-left: 20px;
     margin-bottom: 20px;
     width: 145px;
